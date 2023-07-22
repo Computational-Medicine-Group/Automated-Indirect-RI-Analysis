@@ -1,0 +1,77 @@
+% Font used in the doc
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+
+% Color of the title
+\usepackage{etoolbox}
+\usepackage{xcolor}
+\usepackage{titling}
+
+% Modify title format
+\pretitle{\begin{flushleft}\color{red}\Huge\bfseries}
+\posttitle{\end{flushleft}}
+
+% Modify author and date format
+\preauthor{\begin{flushleft}}
+\postauthor{\end{flushleft}}
+\predate{\begin{flushleft}}
+\postdate{\end{flushleft}}
+
+% Color of the section / subsection and subsubsection titles
+%\usepackage{titlesec}
+%\titleformat{\section}{\color{red}\normalfont\Large\bfseries}{\thesection}{1em}{}
+%\titleformat{\subsection}{\color{red}\normalfont\large\bfseries}{\thesubsection}{1em}{}
+%\titleformat{\subsubsection}{\color{red}\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% Color of the TOC
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\color{red}\Large\bfseries}
+%\renewcommand{\cftsecfont}{\color{red}}
+%\renewcommand{\cftsubsecfont}{\color{red}}
+%\renewcommand{\cftsubsubsecfont}{\color{red}}
+
+% Color of the hyperlink
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,  % Specify the highlight color for internal links
+  urlcolor=blue,   % Specify the highlight color for URLs
+  citecolor=blue   % Specify the highlight color for citations
+}
+
+% Font size of the caption
+\usepackage{caption}
+\captionsetup{font=small}
+
+% Set the Line Spacing:
+\usepackage{setspace}
+\setstretch{1.2} % Adjust the value to increase or decrease the line spacing
+
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Last page a red rectagle
+\iffalse % essentially comments out the following
+\usepackage{background}
+\usepackage{lastpage}
+\usepackage{tikz}
+
+\newcommand{\backgroundLastPage}{%
+  \afterpage{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \fill [red] (current page.north west) rectangle (current page.south east);
+    \end{tikzpicture}%
+    \null%
+    \thispagestyle{empty}%
+    \clearpage%
+  }%
+}
+\fi
+
+
