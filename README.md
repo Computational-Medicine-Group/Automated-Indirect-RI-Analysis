@@ -1,10 +1,9 @@
 # Indirect Estimation of Reference Intervals from Clinical "Big Data"
 
-Brief project description here.
+This repository contains the RMarkdown script (Handout.Rmd) for the analysis of indirect reference intervals (RIs) from clinical cohort data. The script provides a step-by-step instructions to perform the analysis and generate results.
 
 ## Introduction
 
-This repository contains the RMarkdown script (Handout.Rmd) for the analysis of indirect reference intervals (RIs) from clinical cohort data. The script provides a step-by-step instructions to perform the analysis and generate results.
 Reference intervals play a crucial role in diagnostic medicine, helping physicians identify potentially pathological states in patient test results. By utilizing newer methodologies like refineR, we can estimate precise RIs directly from routine clinical data, making it especially valuable for patient groups with unique characteristics, such as pediatric or multimorbid populations.
 
 ## Requirements
