@@ -55,4 +55,4 @@ This project is licensed under [CC BY-NC 3.0](https://creativecommons.org/licens
 
 ## Contact
 
-If you have any questions or feedback, feel free to contact me at <tobias.blatter@extern.insel.ch>.
+If you have any questions or feedback, feel free to contact me at <tobias.blatter@insel.ch>.
